@@ -1,0 +1,12 @@
+{
+  "name": "OSD Notifier",
+  "description": "Listens for messages on DBus, when received it outputs that message as a proper OSD notification.",
+  "uuid": "kmcwilliampublic+gnome-osd-notifier@gmail.com",
+  "url": "",
+  "version": 1,
+  "shell-version": [
+    "40",
+    "41",
+    "42"
+  ]
+}
