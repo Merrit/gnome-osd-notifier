@@ -40,6 +40,7 @@ const OSDInterface = new Lang.Class({
     /** @param double maxLevel */
     showOSD: function (iconName, label, level, maxLevel) {
         let gicon = Gio.icon_new_for_string(iconName);
+        if ( label === '' ) label = undefined;
         // https://gitlab.gnome.org/GNOME/gnome-shell/-/blob/main/js/ui/osdWindow.js#L174
         Main.osdWindowManager.show(-1, gicon, label, level, maxLevel);
     }
